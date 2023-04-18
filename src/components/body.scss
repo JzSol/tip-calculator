@@ -1,0 +1,166 @@
+@font-face {
+  font-family: 'Space Mono';
+  src: url('../fonts/SpaceMono-Regular.ttf') format('woff2');
+}
+
+.body {
+  margin-top: 8.78vw;
+  display: flex;
+  justify-content: center;
+}
+.container {
+  position: relative;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  width: 920px;
+  border-radius: 20px 20px 20px 20px;
+  height: 481px;
+  background-color: white;
+}
+
+.group11 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  margin-right: 30px;
+  background-color: #00474b;
+  // position: absolute;
+  position: relative;
+
+  border-radius: 20px 20px 20px 20px;
+  width: 413px;
+  height: 417px;
+}
+
+.resetbtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 5px 5px 5px 5px;
+  width: 334px;
+  height: 48px;
+
+  background-color: #26c2ae;
+  position: absolute;
+  bottom: 40px;
+  font-family: 'Space Mono';
+  text-transform: uppercase;
+
+  cursor: pointer;
+}
+.total {
+  position: absolute;
+  height: 71px;
+  left: 48.67%;
+  right: 9.69%;
+  top: calc(50% - 71px / 2 - 37px);
+
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 71px;
+  /* identical to box height */
+
+  text-align: right;
+  letter-spacing: -1px;
+
+  color: #26c2ae;
+}
+
+.textblock {
+  position: absolute;
+  left: 9.69%;
+  right: 74.82%;
+  top: 36.45%;
+  bottom: 53%;
+}
+
+.tot {
+  position: absolute;
+  height: 24px;
+  right: 23.44%;
+  top: calc(50% - 24px / 2 - 10px);
+
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #ffffff;
+}
+.person {
+  position: absolute;
+  height: 19px;
+  top: 20px;
+
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 19px;
+
+  color: #7f9d9f;
+}
+
+.tipAm {
+  position: absolute;
+  height: 71px;
+  left: 57.06%;
+  right: 20%;
+  top: 40px;
+
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 71px;
+
+  text-align: right;
+  letter-spacing: -1px;
+  color: #26c2ae;
+}
+
+.textblock1 {
+  position: absolute;
+  left: 0%;
+  right: 70.57%;
+  top: 22.54%;
+  bottom: 15.49%;
+}
+
+.tot1 {
+  position: absolute;
+  height: 24px;
+  left: 33px;
+  width: 100px;
+  top: -40px;
+
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+}
+.person1 {
+  position: absolute;
+  height: 19px;
+  left: 0%;
+  right: 34.69%;
+  top: 20px;
+
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 19px;
+
+  color: #7f9d9f;
+}

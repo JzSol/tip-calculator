@@ -1,0 +1,19 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: auto;
+  height: auto;
+}
+
+.App-header {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  width: 86.66px;
+  height: 53.14px;
+  margin-top: 1.63vw;
+  background-image: url('./images/SPLITTER.svg');
+}
