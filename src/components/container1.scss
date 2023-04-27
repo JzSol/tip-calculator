@@ -129,9 +129,14 @@
   color: #ffffff;
 
   &:hover {
-    background-color: #26c2ae;
+    background: #9fe8df;
+
     color: #00474b;
   }
+}
+
+.activeBtn {
+  background-color: #26c2ae;
 }
 
 .count {

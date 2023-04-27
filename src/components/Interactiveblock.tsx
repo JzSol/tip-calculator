@@ -1,3 +1,4 @@
+import classNames from 'classnames';
 import './container1.scss';
 
 type props = {
@@ -8,6 +9,7 @@ type props = {
   customPerc: string;
   setCustomPerc: React.Dispatch<React.SetStateAction<string>>;
   setPercBtn: React.Dispatch<React.SetStateAction<number>>;
+  percBtn: number;
 };
 
 export const Interactiveblock: React.FC<props> = ({
@@ -17,6 +19,7 @@ export const Interactiveblock: React.FC<props> = ({
   setCount,
   customPerc,
   setCustomPerc,
+  percBtn,
   setPercBtn,
 }) => {
   const handleBillChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -32,6 +35,7 @@ export const Interactiveblock: React.FC<props> = ({
   };
 
   const handleKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
+    setPercBtn(0);
     // Allow only numbers to be entered
     const isNumber = /^[0-9]$/.test(event.key);
     const isDelete = event.key === 'Backspace' || event.key === 'Delete';
@@ -39,6 +43,7 @@ export const Interactiveblock: React.FC<props> = ({
       event.preventDefault();
     }
   };
+  const tipButtonsValues = [5, 10, 15, 25, 50];
 
   return (
     <div className='interactiveblock'>
@@ -63,31 +68,18 @@ export const Interactiveblock: React.FC<props> = ({
         <div className='select'>Select Tip %</div>
 
         <div className='btnbox'>
-          <button
-            className='btn'
-            onClick={() => setPercBtn(50)}>
-            5%
-          </button>
-          <button
-            className='btn'
-            onClick={() => setPercBtn(250)}>
-            25%
-          </button>
-          <button
-            className='btn'
-            onClick={() => setPercBtn(100)}>
-            10%
-          </button>
-          <button
-            className='btn'
-            onClick={() => setPercBtn(500)}>
-            50%
-          </button>
-          <button
-            className='btn'
-            onClick={() => setPercBtn(150)}>
-            15%
-          </button>
+          {tipButtonsValues.map((value) => (
+            <button
+              key={value}
+              className={classNames('btn', { activeBtn: value === percBtn })}
+              onClick={() => {
+                setPercBtn(value);
+                setCustomPerc('');
+              }}>
+              {value}%
+            </button>
+          ))}
+
           <input
             className='custbtn'
             type='text'
