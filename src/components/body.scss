@@ -34,7 +34,6 @@
   width: 413px;
   height: 417px;
 }
-
 .resetbtn {
   display: flex;
   justify-content: center;
@@ -47,11 +46,64 @@
   background-color: #26c2ae;
   position: absolute;
   bottom: 40px;
-  font-family: 'Space Mono';
   text-transform: uppercase;
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 30px;
+
+  text-align: center;
 
   cursor: pointer;
+
+  &:hover {
+    background: #9fe8df;
+  }
 }
+
+.notActive {
+  background: #0d686d;
+  cursor: default;
+
+  &:hover {
+    background: #0d686d;
+  }
+}
+
+// .resetbtn {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+
+//   border-radius: 5px 5px 5px 5px;
+//   width: 334px;
+//   height: 48px;
+
+//   background-color: #26c2ae;
+//   position: absolute;
+//   bottom: 40px;
+//   text-transform: uppercase;
+//   font-family: 'Space Mono';
+//   font-style: normal;
+//   font-weight: 700;
+//   font-size: 23px;
+//   line-height: 30px;
+
+//   text-align: center;
+
+//   cursor: pointer;
+//   &:hover {
+//     background: #9fe8df;
+//     cursor: pointer;
+//   }
+// }
+
+// .notActive {
+//   background: #0d686d;
+//   cursor: default;
+// }
+
 .total {
   position: absolute;
   height: 71px;
@@ -64,7 +116,6 @@
   font-weight: 700;
   font-size: 48px;
   line-height: 71px;
-  /* identical to box height */
 
   text-align: right;
   letter-spacing: -1px;
@@ -112,7 +163,7 @@
   position: absolute;
   height: 71px;
   left: 57.06%;
-  right: 20%;
+  right: 9.69%;
   top: 40px;
 
   font-family: 'Space Mono';
