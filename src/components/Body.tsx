@@ -45,7 +45,7 @@ export const Body = () => {
   return (
     <body className='body'>
       <main className='container'>
-        <Interactiveblock
+        {/* <Interactiveblock
           bill={bill}
           setBill={setBill}
           count={count}
@@ -54,7 +54,7 @@ export const Body = () => {
           setCustomPerc={setCustomPerc}
           setPercBtn={setPercBtn}
           percBtn={percBtn}
-        />
+        /> */}
         <button className='group11'>
           <div
             className={classNames('resetbtn', { notActive: !resetStatus })}

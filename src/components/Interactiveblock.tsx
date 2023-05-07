@@ -1,5 +1,5 @@
 import classNames from 'classnames';
-import './container1.scss';
+import './interactiveblock.scss';
 
 type props = {
   bill: string;
